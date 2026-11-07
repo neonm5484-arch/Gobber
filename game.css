@@ -1,0 +1,134 @@
+a.brand-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.coin-chip {
+  padding: 9px 13px;
+  border: 1px solid rgba(247, 185, 85, 0.25);
+  border-radius: 999px;
+  background: rgba(247, 185, 85, 0.1);
+  color: #ffe2a8;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.mode-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 220px;
+}
+
+.mode-card .primary-btn {
+  margin-top: auto;
+}
+
+.progress-track {
+  height: 8px;
+  margin: 18px 0 20px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.07);
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  transition: width 0.3s ease;
+}
+
+.question-text {
+  margin: 14px 0 8px;
+  font-size: clamp(1.45rem, 3vw, 2rem);
+}
+
+.answer-btn:disabled {
+  cursor: default;
+  opacity: 0.8;
+}
+
+.muted-text {
+  color: var(--muted);
+}
+
+.round-result {
+  text-align: center;
+  max-width: 720px;
+  margin: 24px auto;
+}
+
+.round-result .cta-row {
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.inventory-pill {
+  gap: 7px;
+}
+
+.inventory-pill small {
+  color: var(--primary);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.audit-box {
+  margin-top: 24px;
+  padding: 16px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.035);
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.audit-box ul {
+  padding-left: 20px;
+  color: var(--muted);
+}
+
+.audit-box li {
+  margin: 9px 0;
+}
+
+.site-footer {
+  padding: 28px 8px 0;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.pack-card .reveal-close {
+  align-self: flex-end;
+  color: #162033;
+  background: rgba(255,255,255,0.45);
+}
+
+@media (max-width: 760px) {
+  .topbar {
+    grid-template-columns: 1fr auto;
+  }
+
+  .topbar .nav {
+    grid-column: 1 / -1;
+    order: 3;
+  }
+
+  .brand {
+    gap: 8px;
+  }
+
+  .coin-chip {
+    justify-self: end;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
